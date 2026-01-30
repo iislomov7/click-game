@@ -40,3 +40,107 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    button {
+      font-size: 30px;
+      padding: 20px 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1>Nima gap 👋</h1>
+    <p>Ball: <span id="score">0</span></p>
+    <button onclick="clickMe()">BOS</button>
+  </div>
+
+  <!-- OVOZ -->
+  <audio id="clickSound">
+    <source src="https://www.soundjay.com/buttons/sounds/button-09.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    let score = 0;
+    const sound = document.getElementById("clickSound");
+
+    function clickMe() {
+      score++;
+      document.getElementById("score").innerText = score;
+      sound.currentTime = 0;
+      sound.play();
+    }
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    button {
+      font-size: 30px;
+      padding: 20px 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1>Nima gap 👋</h1>
+    <p>Ball: <span id="score">0</span></p>
+    <button onclick="clickMe()">BOS</button>
+  </div>
+
+  <!-- OVOZ -->
+  <audio id="clickSound">
+    <source src="https://www.soundjay.com/buttons/sounds/button-09.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    let score = 0;
+    const sound = document.getElementById("clickSound");
+
+    function clickMe() {
+      score++;
+      document.getElementById("score").innerText = score;
+      sound.currentTime = 0;
+      sound.play();
+    }
+  </script>
+
+</body>
+</html>
